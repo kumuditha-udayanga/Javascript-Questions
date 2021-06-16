@@ -16,4 +16,4 @@ function reverseWords(){
     }
     alert(reverseSentence);
 }
-
+reverseWords();

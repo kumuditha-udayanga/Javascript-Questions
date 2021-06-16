@@ -16,4 +16,4 @@ function palindrom(){
     console.log(revWord);
     
 }
-palindrom();
+// palindrom();
