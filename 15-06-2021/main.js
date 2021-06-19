@@ -1,4 +1,4 @@
-function main(key){
+function _main(key){
     let player01Rounds = 0;
     let player02Rounds = 0;
     let player01Name = "";
@@ -12,25 +12,26 @@ function main(key){
             player02Name = prompt("Enter player 02 name"); 
         }
          _player01();
+         _player02();
     }
 }
 
-function _player01() {
-    let diceNumber = Math.floor(Math.random() * 6) + 1;
-    let movedSquare = 49;
-    let rubyCount = 0;
-    let totalCash = 0;
-    _round(movedSquare, rubyCount, totalCash);
-}
+// function _player01() {
+//     let diceNumber = Math.floor(Math.random() * 6) + 1;
+//     let movedSquare = 49;
+//     let rubyCount = 0;
+//     let totalCash = 0;
+//     _round(movedSquare, rubyCount, totalCash);
+// }
 
-function _player02() {
-    let diceNumber = Math.floor(Math.random() * 6) + 1;
-    let movedSquare = 0;
-    let rubyCount = 0;
-    let totalCash = 0;
-    _round(movedSquare, rubyCount, totalCash);
-}
-main();
+// function _player02() {
+//     let diceNumber = Math.floor(Math.random() * 6) + 1;
+//     let movedSquare = 0;
+//     let rubyCount = 0;
+//     let totalCash = 0;
+//     _round(movedSquare, rubyCount, totalCash);
+// }
+
 
 function _round (movedSquare, rubyCount, totalCash){
     let squares = {
