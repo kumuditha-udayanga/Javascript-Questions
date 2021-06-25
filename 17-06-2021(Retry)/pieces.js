@@ -54,7 +54,7 @@ function Pawn (color){
     this.movePatterns = ["forward", "diagonal"];
 }
 
-export default function players(){
+export function players(){
     //White players
     const whiteKing = new King('white');
     const whiteQueen = new Queen('white');
