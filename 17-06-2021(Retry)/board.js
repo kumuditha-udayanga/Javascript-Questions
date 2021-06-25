@@ -20,7 +20,7 @@
 //     g:['f','h'],
 //     h:['g']
 // }
-import players from './pieces.js'
+import { players } from './pieces.js'
 
 let letterArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 let chessBoard  = {}
