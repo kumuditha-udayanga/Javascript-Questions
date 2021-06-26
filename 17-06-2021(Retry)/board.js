@@ -29,6 +29,4 @@ for (let i in letterArray){
         chessBoard[letterArray[i]+x] = {};
       }
 }
-console.log(chessBoard)
-
-console.log(players.whiteKing)
+console.log(players);
