@@ -3,8 +3,7 @@ console.log(chessBoard);
 
 
 function movePiece(move, to){
-    console.log(chessBoard[move].type);
-    chessBoard[move].type == "king" ? console.log("Pawn") : console.log("no");
+    chessBoard[move].type == "Pawn" ? console.log("Pawn") : console.log("no");
     chessBoard[to] = chessBoard[move]
     chessBoard[to].position = to;
     chessBoard[move] = {}
