@@ -14,7 +14,6 @@ function addItems(itemArray){
             item = new Object;
             item.name = name;
             item.price = price;
-            item.type = type;
             itemArray.push(item);
             console.log(item);
         }    
