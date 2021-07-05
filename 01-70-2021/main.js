@@ -21,8 +21,3 @@ let company = (function(){
     };
 })();
 
-function print (place, designation){
-    console.log(place.designation);
-}
-
-print(company.director);
