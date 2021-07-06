@@ -21,3 +21,4 @@ let company = (function(){
     };
 })();
 
+// Write new function here
