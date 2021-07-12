@@ -1,24 +1,30 @@
 let company = (function(){
     let salary;
     let allowance;
-    // console.log(salary);
+    function director(){
+        salary = 300000;
+        allowance = 75000;
+        return salary + allowance;
+    }
+    function manager(){
+        salary = 200000;
+        allowance = 50000;
+        return salary + allowance;
+    }
+    function worker(){
+        salary = 100000;
+        allowance = 25000;
+        return salary + allowance;
+    }
     return{
-        director: function(){
-            salary = 300000;
-            allowance = 75000;
-            return salary + allowance;
-        },
-        manager: function(){
-            salary = 200000;
-            allowance = 50000;
-            return salary + allowance;
-        },
-        worker: function(){
-            salary = 100000;
-            allowance = 25000;
-            return salary + allowance;
-        }
+       manager: manager(),
+       director: director(),
+       worker: worker()
     };
 })();
 
-// Write new function here
+function main(person){
+    console.log(`Rs.${company[person]}`);
+}
+
+main('manager');
